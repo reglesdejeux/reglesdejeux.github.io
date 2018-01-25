@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<title>Les règles de jeu Reversi (Othello)</title>
+
+<!-- This site is optimized with the Yoast SEO plugin v6.0 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="./index.html" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Les règles de jeu Reversi (Othello)" />
+<meta property="og:description" content="Ce qu&#8217;il vous faut pour jouer au jeu Reversi Avant de connaître les règles du jeu Reversi, il faut savoir que ce jeu est apparu en Grande-Bretagne à l&#8217;époque victorienne et a été populaire depuis. Dans les années 1970, il a été donné un coup de pouce quand une version de marque appelée Othello est devenue très populaire &hellip;" />
+<meta property="og:url" content="./regles-jeu-reversi-othello/" />
+<meta property="og:site_name" content="Règles" />
+<meta property="article:section" content="jeux" />
+<meta property="article:published_time" content="2018-01-06T23:11:31+00:00" />
+<meta property="article:modified_time" content="2018-01-25T12:02:37+00:00" />
+<meta property="og:updated_time" content="2018-01-25T12:02:37+00:00" />
+<meta property="og:image" content="./wp-content/uploads/2018/01/reversi-othello.png" />
+<meta property="og:image:width" content="300" />
+<meta property="og:image:height" content="300" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="Ce qu&#8217;il vous faut pour jouer au jeu Reversi Avant de connaître les règles du jeu Reversi, il faut savoir que ce jeu est apparu en Grande-Bretagne à l&#8217;époque victorienne et a été populaire depuis. Dans les années 1970, il a été donné un coup de pouce quand une version de marque appelée Othello est devenue très populaire [&hellip;]" />
+<meta name="twitter:title" content="Les règles de jeu Reversi (Othello)" />
+<meta name="twitter:image" content="./wp-content/uploads/2018/01/reversi-othello.png" />
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","@id":"#website","url":".\/","name":"Panth\u00e8res","potentialAction":{"@type":"SearchAction","target":".\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"Person","url":".\/regles-jeu-reversi-othello\/","sameAs":[],"@id":"#person","name":"Panth\u00e8res"}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Règles &raquo; Feed" href="./../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Règles &raquo; Comments Feed" href="./../comments/feed/index.html" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":".\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.2"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56794,8205,9794,65039],[55358,56794,8203,9794,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='wp_automatic_gallery_style-css'  href='./../wp-content/plugins/wp-automatic/css/wp-automatic.css?ver=4.9.2' type='text/css' media='all' />
+<link rel='stylesheet' id='gridlove-fonts-css'  href='http://fonts.googleapis.com/css?family=Cabin%3A400%2C700%7CLato%3A400%2C700&#038;subset=latin%2Clatin-ext&#038;ver=1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='gridlove-main-css'  href='./../wp-content/themes/gridlove/assets/css/min.css?ver=1.1' type='text/css' media='all' />
+<style id='gridlove-main-inline-css' type='text/css'>
+body{font-size: 16px;}h1, .h1 {font-size: 40px;}h2, .h2,.col-lg-12 .gridlove-post-b .h3 {font-size: 26px;}h3, .h3 {font-size: 22px;}h4, .h4 {font-size: 20px;}h5, .h5 {font-size: 18px;}h6, .h6 {font-size: 16px;}.widget, .gridlove-header-responsive .sub-menu, .gridlove-site-header .sub-menu{font-size: 14px;}.gridlove-main-navigation {font-size: 16px;}.gridlove-post {font-size: 16px;}body{background: #f3f3f3;color: #5e5e5e;font-family: 'Cabin';font-weight: 400;}h1, h2, h3, h4, h5, h6,.h1, .h2, .h3, .h4, .h5, .h6,blockquote,thead td,.comment-author b,q:before{color: #111111;font-family: 'Lato';font-weight: 700;}.gridlove-main-nav a,.gridlove-posts-widget a{font-family: 'Cabin';font-weight: 700;}.gridlove-header-top{background-color: #222222;color: #dddddd;}.gridlove-header-top a{color: #dddddd;}.gridlove-header-top a:hover{color: #ffffff;}.gridlove-header-wrapper,.gridlove-header-middle .sub-menu,.gridlove-header-responsive,.gridlove-header-responsive .sub-menu{background-color:#ffffff; }.gridlove-header-middle,.gridlove-header-middle a,.gridlove-header-responsive,.gridlove-header-responsive a{color: #111111;}.gridlove-header-middle a:hover,.gridlove-header-middle .gridlove-sidebar-action:hover,.gridlove-header-middle .gridlove-actions-button > span:hover,.gridlove-header-middle .current_page_item > a,.gridlove-header-middle .current_page_ancestor > a,.gridlove-header-middle .current-menu-item > a,.gridlove-header-middle .current-menu-ancestor > a,.gridlove-header-middle .gridlove-category-menu article:hover a,.gridlove-header-responsive a:hover {color: #009cff;}.gridlove-header-middle .active>span,.gridlove-header-middle .gridlove-main-nav>li.menu-item-has-children:hover>a,.gridlove-header-middle .gridlove-social-icons:hover>span,.gridlove-header-responsive .active>span{background-color: rgba(17,17,17,0.05)}.gridlove-header-middle .gridlove-button-search{background-color: #009cff;}.gridlove-header-middle .gridlove-search-form input{border-color: rgba(17,17,17,0.1)}.gridlove-header-middle .sub-menu,.gridlove-header-responsive .sub-menu{border-top: 1px solid rgba(17,17,17,0.05)}.gridlove-header-middle{height: 100px;}.gridlove-branding-bg{background:#f0233b;}.gridlove-header-responsive .gridlove-actions-button:hover >span{color:#009cff;}.gridlove-sidebar-action .gridlove-bars:before,.gridlove-sidebar-action .gridlove-bars:after{background:#111111;}.gridlove-sidebar-action:hover .gridlove-bars:before,.gridlove-sidebar-action:hover .gridlove-bars:after{background:#009cff;}.gridlove-sidebar-action .gridlove-bars{border-color: #111111;}.gridlove-sidebar-action:hover .gridlove-bars{border-color:#009cff;}.gridlove-header-bottom .sub-menu{ background-color:#ffffff;}.gridlove-header-bottom .sub-menu a{color:#111111;}.gridlove-header-bottom .sub-menu a:hover,.gridlove-header-bottom .gridlove-category-menu article:hover a{color:#009cff;}.gridlove-header-bottom{background-color:#ffffff;}.gridlove-header-bottom,.gridlove-header-bottom a{color: #111111;}.gridlove-header-bottom a:hover,.gridlove-header-bottom .gridlove-sidebar-action:hover,.gridlove-header-bottom .gridlove-actions-button > span:hover,.gridlove-header-bottom .current_page_item > a,.gridlove-header-bottom .current_page_ancestor > a,.gridlove-header-bottom .current-menu-item > a,.gridlove-header-bottom .current-menu-ancestor > a {color: #009cff;}.gridlove-header-bottom .active>span,.gridlove-header-bottom .gridlove-main-nav>li.menu-item-has-children:hover>a,.gridlove-header-bottom .gridlove-social-icons:hover>span{background-color: rgba(17,17,17,0.05)}.gridlove-header-bottom .gridlove-search-form input{border-color: rgba(17,17,17,0.1)}.gridlove-header-bottom,.gridlove-header-bottom .sub-menu{border-top: 1px solid rgba(17,17,17,0.07)}.gridlove-header-bottom .gridlove-button-search{background-color: #009cff;}.gridlove-header-sticky,.gridlove-header-sticky .sub-menu{background-color:#ffffff; }.gridlove-header-sticky,.gridlove-header-sticky a{color: #111111;}.gridlove-header-sticky a:hover,.gridlove-header-sticky .gridlove-sidebar-action:hover,.gridlove-header-sticky .gridlove-actions-button > span:hover,.gridlove-header-sticky .current_page_item > a,.gridlove-header-sticky .current_page_ancestor > a,.gridlove-header-sticky .current-menu-item > a,.gridlove-header-sticky .current-menu-ancestor > a,.gridlove-header-sticky .gridlove-category-menu article:hover a{color: #009cff;}.gridlove-header-sticky .active>span,.gridlove-header-sticky .gridlove-main-nav>li.menu-item-has-children:hover>a,.gridlove-header-sticky .gridlove-social-icons:hover>span{background-color: rgba(17,17,17,0.05)}.gridlove-header-sticky .gridlove-search-form input{border-color: rgba(17,17,17,0.1)}.gridlove-header-sticky .sub-menu{border-top: 1px solid rgba(17,17,17,0.05)}.gridlove-header-sticky .gridlove-button-search{background-color: #009cff;}.gridlove-cover-area,.gridlove-cover{height:500px; }.gridlove-cover-area .gridlove-cover-bg img{width:1500px; }.gridlove-box,#disqus_thread{background: #ffffff;}a{color: #5e5e5e;}.entry-title a{ color: #111111;}a:hover,.comment-reply-link,#cancel-comment-reply-link,.gridlove-box .entry-title a:hover,.gridlove-posts-widget article:hover a{color: #009cff;}.entry-content p a,.widget_text a{color: #009cff; border-color: rgba(0,156,255,0.8);}.entry-content p a:hover,.widget_text a:hover{border-bottom: 1px solid transparent;}.comment-reply-link:hover,.gallery .gallery-item a:after{color: #5e5e5e; }.gridlove-post-b .box-col-b:only-child .entry-title a,.gridlove-post-d .entry-overlay:only-child .entry-title a{color: #111111;}.gridlove-post-b .box-col-b:only-child .entry-title a:hover,.gridlove-post-d .entry-overlay:only-child .entry-title a:hover{ color: #009cff; }.gridlove-post-b .box-col-b:only-child .meta-item,.gridlove-post-b .box-col-b:only-child .entry-meta a,.gridlove-post-b .box-col-b:only-child .entry-meta span,.gridlove-post-d .entry-overlay:only-child .meta-item,.gridlove-post-d .entry-overlay:only-child .entry-meta a,.gridlove-post-d .entry-overlay:only-child .entry-meta span {color: #818181;}.entry-meta .meta-item, .entry-meta a, .entry-meta span,.comment-metadata a{color: #818181;}blockquote{color: rgba(17,17,17,0.8);}blockquote:before{color: rgba(17,17,17,0.15);}.entry-meta a:hover{color: #111111;}.widget_tag_cloud a,.entry-tags a{ background: rgba(94,94,94,0.1); color: #5e5e5e; }.submit,.gridlove-button,.mks_autor_link_wrap a,.mks_read_more a,input[type="submit"],.gridlove-cat, .gridlove-pill,.gridlove-button-search{color:#FFF;background-color: #009cff;}.gridlove-button:hover{color:#FFF;}.gridlove-share a:hover{background:rgba(17, 17, 17, .8);color:#FFF;}.gridlove-pill:hover,.gridlove-author-links a:hover,.entry-category a:hover{background: #111;color: #FFF;}.gridlove-cover-content .entry-category a:hover,.entry-overlay .entry-category a:hover,.gridlove-highlight .entry-category a:hover,.gridlove-box.gridlove-post-d .entry-overlay .entry-category a:hover,.gridlove-post-a .entry-category a:hover,.gridlove-highlight .gridlove-format-icon{background: #FFF;color: #111;}.gridlove-author, .gridlove-prev-next-nav,.comment .comment-respond{border-color: rgba(94,94,94,0.1);}.gridlove-load-more a,.gridlove-pagination .gridlove-next a,.gridlove-pagination .gridlove-prev a,.gridlove-pagination .next,.gridlove-pagination .prev,.gridlove-infinite-scroll a,.double-bounce1, .double-bounce2,.gridlove-link-pages > span,.module-actions ul.page-numbers span.page-numbers{color:#FFF;background-color: #009cff;}.gridlove-pagination .current{background-color:rgba(94,94,94,0.1);}.gridlove-highlight{background: #083b5c;}.gridlove-highlight,.gridlove-highlight h4,.gridlove-highlight a{color: #ffffff;}.gridlove-highlight .entry-meta .meta-item, .gridlove-highlight .entry-meta a, .gridlove-highlight .entry-meta span,.gridlove-highlight p{color: rgba(255,255,255,0.8);}.gridlove-highlight .gridlove-author-links .fa-link,.gridlove-highlight .gridlove_category_widget .gridlove-full-color li a:after{background: #b5e1ff;}.gridlove-highlight .entry-meta a:hover{color: #ffffff;}.gridlove-highlight.gridlove-post-d .entry-image a:after{background-color: rgba(8,59,92,0.7);}.gridlove-highlight.gridlove-post-d:hover .entry-image a:after{background-color: rgba(8,59,92,0.9);}.gridlove-highlight.gridlove-post-a .entry-image:hover>a:after, .gridlove-highlight.gridlove-post-b .entry-image:hover a:after{background-color: rgba(8,59,92,0.2);}.gridlove-highlight .gridlove-slider-controls > div{background-color: rgba(255,255,255,0.1);color: #ffffff; }.gridlove-highlight .gridlove-slider-controls > div:hover{background-color: rgba(255,255,255,0.3);color: #ffffff; }.gridlove-highlight.gridlove-box .entry-title a:hover{color: #b5e1ff;}.gridlove-highlight.widget_meta a, .gridlove-highlight.widget_recent_entries li, .gridlove-highlight.widget_recent_comments li, .gridlove-highlight.widget_nav_menu a, .gridlove-highlight.widget_archive li, .gridlove-highlight.widget_pages a{border-color: rgba(255,255,255,0.1);}.gridlove-cover-content .entry-meta .meta-item, .gridlove-cover-content .entry-meta a, .gridlove-cover-content .entry-meta span{color: rgba(255, 255, 255, .8);}.gridlove-cover-content .entry-meta a:hover{color: rgba(255, 255, 255, 1);}.module-title h2,.module-title .h2{ color: #111111; }.gridlove-action-link,.gridlove-slider-controls > div,.module-actions ul.page-numbers .next.page-numbers,.module-actions ul.page-numbers .prev.page-numbers{background: rgba(17,17,17,0.1); color: #111111; }.gridlove-slider-controls > div:hover,.gridlove-action-link:hover,.module-actions ul.page-numbers .next.page-numbers:hover,.module-actions ul.page-numbers .prev.page-numbers:hover{color: #111111;background: rgba(17,17,17,0.3); }.gridlove-pn-ico,.gridlove-author-links .fa-link{background: rgba(94,94,94,0.1); color: #5e5e5e;}.gridlove-prev-next-nav a:hover .gridlove-pn-ico{background: rgba(0,156,255,1); color: #ffffff;}.widget_meta a,.widget_recent_entries li,.widget_recent_comments li,.widget_nav_menu a,.widget_archive li,.widget_pages a,.widget_categories li,.gridlove_category_widget .gridlove-count-color li,.widget_categories .children li,.widget_archiv .children li{border-color: rgba(94,94,94,0.1);}.widget_recent_entries a:hover,.menu-item-has-children.active > span,.menu-item-has-children.active > a,.gridlove-nav-widget-acordion:hover,.widget_recent_comments .recentcomments a.url:hover{color: #009cff;}.widget_recent_comments .url,.post-date,.widget_recent_comments .recentcomments,.gridlove-nav-widget-acordion,.widget_archive li,.rss-date,.widget_categories li,.widget_archive li{color:#818181;}.widget_pages .children,.widget_nav_menu .sub-menu{background:#009cff;color:#FFF;}.widget_pages .children a,.widget_nav_menu .sub-menu a,.widget_nav_menu .sub-menu span,.widget_pages .children span{color:#FFF;}.widget_tag_cloud a:hover,.entry-tags a:hover{background: #009cff;color:#FFF;}.gridlove-footer{background: #111111;color: #ffffff;}.gridlove-footer .widget-title{color: #ffffff;}.gridlove-footer a{color: rgba(255,255,255,0.8);}.gridlove-footer a:hover{color: #ffffff;}.gridlove-footer .widget_recent_comments .url, .gridlove-footer .post-date, .gridlove-footer .widget_recent_comments .recentcomments, .gridlove-footer .gridlove-nav-widget-acordion, .gridlove-footer .widget_archive li, .gridlove-footer .rss-date{color: rgba(255,255,255,0.8); }.gridlove-footer .widget_meta a, .gridlove-footer .widget_recent_entries li, .gridlove-footer .widget_recent_comments li, .gridlove-footer .widget_nav_menu a, .gridlove-footer .widget_archive li, .gridlove-footer .widget_pages a,.gridlove-footer table,.gridlove-footer td,.gridlove-footer th,.gridlove-footer .widget_calendar table,.gridlove-footer .widget.widget_categories select,.gridlove-footer .widget_calendar table tfoot tr td{border-color: rgba(255,255,255,0.2);}table,td,th,.widget_calendar table{ border-color: rgba(94,94,94,0.1);}input[type="text"], input[type="email"], input[type="url"], input[type="tel"], input[type="number"], input[type="date"], input[type="password"], select, textarea{border-color: rgba(94,94,94,0.2);}div.mejs-container .mejs-controls {background-color: rgba(94,94,94,0.1);}body .mejs-controls .mejs-time-rail .mejs-time-current{background: #009cff;}body .mejs-video.mejs-container .mejs-controls{background-color: rgba(255,255,255,0.9);}
+</style>
+<script type='text/javascript' src='./../wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='./../wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='./../wp-content/plugins/wp-automatic/js/main-front.js?ver=4.9.2'></script>
+<link rel='https://api.w.org/' href='./../wp-json/index.html' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="./../xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="./../wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.9.2" />
+<link rel='shortlink' href='./../index.html?p=15975' />
+<link rel="alternate" type="application/json+oembed" href="./../wp-json/oembed/1.0/embed/index.html?url=.%2Fregles-jeu-reversi-othello%2F" />
+<link rel="alternate" type="text/xml+oembed" href="./../wp-json/oembed/1.0/embed/index.html?url=.%2Fregles-jeu-reversi-othello%2F&#038;format=xml" />
+    <script>
+    function hasWKGoogleAnalyticsCookie() {
+      return (new RegExp('wp_wk_ga_untrack_' + document.location.hostname) ).test(document.cookie);
+    }
+    </script>
+    
+      <script>
+      if( !hasWKGoogleAnalyticsCookie() ) {
+        //Google Analytics
+  			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    		ga('create', 'UA-88954551-11', 'auto');
+
+          
+        ga('send', 'pageview');
+      }
+      </script>
+      
+        </head>
+
+<body class="post-template-default single single-post postid-15975 single-format-standard unknown">
+	
+		
+	<header id="header" class="gridlove-site-header hidden-md-down  gridlove-header-shadow">
+			
+			
+			<div class="gridlove-header-wrapper">
+    <div class="gridlove-header-1 gridlove-header-middle container">
+        
+        <div class="gridlove-slot-l">
+            
+<div class="gridlove-site-branding">
+			<span class="site-title h1"><a href="./../index.html" rel="home"><img class="gridlove-logo" src="./../wp-content/themes/gridlove/assets/img/gridlove_logo.png" alt="Règles"></a></span>
+	
+	
+</div>
+
+        </div>
+
+        <div class="gridlove-slot-r">
+            <nav class="gridlove-main-navigation">	
+					</nav>            	<ul class="gridlove-actions gridlove-menu">
+					<li class="gridlove-actions-button gridlove-action-search">
+	<span>
+		<i class="fa fa-search"></i>
+	</span>
+	<ul class="sub-menu">
+		<li>
+			<form class="gridlove-search-form" action="./../index.html" method="get"><input name="s" type="text" value="" placeholder="Type here to search..." /><button type="submit" class="gridlove-button-search">Search</button></form>		</li>
+	</ul>
+</li>					<li class="gridlove-actions-button">
+	<span class="gridlove-sidebar-action">
+		<i class="fa fa-bars"></i>
+	</span>
+</li>			</ul>
+        </div>
+        
+    </div>
+</div>
+
+							<div id="gridlove-header-sticky" class="gridlove-header-sticky">
+	<div class="container">
+		
+		<div class="gridlove-slot-l">
+			
+<div class="gridlove-site-branding">
+			<span class="site-title h1"><a href="./../index.html" rel="home"><img class="gridlove-logo" src="./../wp-content/themes/gridlove/assets/img/gridlove_logo.png" alt="Règles"></a></span>
+	
+	
+</div>
+
+		</div>	
+		<div class="gridlove-slot-r">
+			<nav class="gridlove-main-navigation">	
+					</nav>     
+				<ul class="gridlove-actions gridlove-menu">
+					<li class="gridlove-actions-button gridlove-action-search">
+	<span>
+		<i class="fa fa-search"></i>
+	</span>
+	<ul class="sub-menu">
+		<li>
+			<form class="gridlove-search-form" action="./../index.html" method="get"><input name="s" type="text" value="" placeholder="Type here to search..." /><button type="submit" class="gridlove-button-search">Search</button></form>		</li>
+	</ul>
+</li>					<li class="gridlove-actions-button">
+	<span class="gridlove-sidebar-action">
+		<i class="fa fa-bars"></i>
+	</span>
+</li>			</ul>
+		</div>
+	</div>
+</div>			
+	</header>
+
+	<div id="gridlove-header-responsive" class="gridlove-header-responsive hidden-lg-up">
+
+	<div class="container">
+		
+		<div class="gridlove-site-branding mini">
+		<span class="site-title h1"><a href="./../index.html" rel="home"><img class="gridlove-logo-mini" src="./../wp-content/themes/gridlove/assets/img/gridlove_logo_mini.png" alt="Règles"></a></span>
+</div>
+		
+
+<ul class="gridlove-actions gridlove-menu">
+
+																<li class="gridlove-actions-button gridlove-action-search">
+	<span>
+		<i class="fa fa-search"></i>
+	</span>
+	<ul class="sub-menu">
+		<li>
+			<form class="gridlove-search-form" action="./../index.html" method="get"><input name="s" type="text" value="" placeholder="Type here to search..." /><button type="submit" class="gridlove-button-search">Search</button></form>		</li>
+	</ul>
+</li>															<li class="gridlove-actions-button">
+	<span class="gridlove-sidebar-action">
+		<i class="fa fa-bars"></i>
+	</span>
+</li>				
+	
+</ul>
+	</div>
+
+</div>
+
+
+
+
+
+
+<div id="content" class="gridlove-site-content container gridlove-sidebar-right">
+
+    <div class="row">
+
+    	
+	
+	
+		<div class="gridlove-share-wrapper">
+			<div class="gridlove-share gridlove-box gridlove-sticky-share">
+
+									<a href="javascript:void(0);" class="gridlove-facebook gridlove-share-item" data-url="http://www.facebook.com/sharer/sharer.php?u=.%2Fregles-jeu-reversi-othello%2F&amp;t=Les+r%C3%A8gles+de+jeu+Reversi+%28Othello%29"><i class="fa fa-facebook"></i></a>									<a href="javascript:void(0);" class="gridlove-twitter gridlove-share-item" data-url="http://twitter.com/intent/tweet?url=.%2Fregles-jeu-reversi-othello%2F&amp;text=Les+r%C3%A8gles+de+jeu+Reversi+%28Othello%29"><i class="fa fa-twitter"></i></a>									<a href="javascript:void(0);"  class="gridlove-reddit gridlove-share-item" data-url="http://www.reddit.com/submit?url=.%2Fregles-jeu-reversi-othello%2F&amp;title=Les+r%C3%A8gles+de+jeu+Reversi+%28Othello%29"><i class="fa fa-reddit-alien"></i></a>									<a href="javascript:void(0);"  class="gridlove-pinterest gridlove-share-item" data-url="http://pinterest.com/pin/create/button/?url=.%2Fregles-jeu-reversi-othello%2F&amp;media=.%2Fwp-content%2Fuploads%2F2018%2F01%2Freversi-othello.png&amp;description=Les+r%C3%A8gles+de+jeu+Reversi+%28Othello%29"><i class="fa fa-pinterest-p"></i></a>									<a href="mailto:/?subject=Les+r%C3%A8gles+de+jeu+Reversi+%28Othello%29&amp;body=.%2Fregles-jeu-reversi-othello%2F" class="gridlove-mailto"><i class="fa fa-envelope-o"></i></a>				
+			</div>
+		</div>
+
+		
+
+        <div class="gridlove-content gridlove-single-layout-4">
+
+                            
+                <article id="post-15975" class="gridlove-box box-vm post-15975 post type-post status-publish format-standard has-post-thumbnail hentry category-jeux">
+
+<div class="box-inner-p-smaller box-single text-center">
+	<div class="entry-header">
+	<div class="entry-category">
+	    
+	    	        <a href="./../jeux/index.html" class="gridlove-cat gridlove-cat-21">jeux</a>	    	</div>
+
+    <h1 class="entry-title">Les règles de jeu Reversi (Othello)</h1>
+        	<div class="entry-meta"><div class="meta-item meta-rtime">3 min read</div></div>
+    
+</div></div>
+
+                        
+<div class="box-inner-p-bigger box-single">
+
+    
+	<div class="gridlove-ad"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Responsive -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3711695498099821"
+     data-ad-slot="1645253548"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+
+<div class="entry-content">
+                            
+    <h2>Ce qu&#8217;il vous faut pour jouer au jeu <strong>Reversi</strong></h2>
+<p>Avant de connaître les <strong>règles du jeu Reversi, </strong>il faut savoir que ce jeu est apparu en Grande-Bretagne à l&#8217;époque victorienne et a été populaire depuis. Dans les années 1970, il a été donné un coup de pouce quand une version de marque appelée <strong>Othello</strong> est devenue très populaire et dans les années 1980, une version du jeu est apparue avec Microsoft Windows qui a fourni un avantage supplémentaire.</p>
+<p>Reversi est joué sur un plateau de 8 x 8 sans damiers. Selon les règles du jeu, il devrait y avoir 64 pièces de couleurs différentes de chaque coté (généralement noir et blanc).</p>
+<p>Le tableau commence vide. Les joueurs choisissent une des couleurs et jouent à tour de rôle jusqu&#8217;à ce que tous les carrés soient occupés. L&#8217;objectif est d&#8217;avoir plus de couleur face vers le haut à la fin de la partie.</p>
+<h2>Quels sont les règles du jeu <strong>Reversi</strong></h2>
+<p>Selon les <strong>règles du jeu Reversi </strong>Le joueur lance une pièce pour décider qui jouera le blanc &#8211; les pièces blanches d&#8217;abord. A chaque tour, le joueur place une pièce sur le plateau avec la couleur tournée vers le haut.</p>
+<p>Pour les quatre premiers coups, les joueurs doivent jouer à l&#8217;un des quatre carrés au milieu du plateau et aucune pièce n&#8217;est capturée ou inversée.</p>
+<p>Chaque pièce jouée doit être placée adjacente à la pièce d&#8217;un adversaire de sorte que la pièce de l&#8217;adversaire ou une rangée de pièces de l&#8217;adversaire soit flanquée de la nouvelle pièce et d&#8217;une autre pièce de la couleur du joueur. Toutes les pièces de l&#8217;adversaire entre ces deux pièces sont «capturées» et retournées pour correspondre à la couleur du joueur.</p>
+<p>Il peut arriver qu&#8217;une pièce soit jouée de sorte que des pièces ou des rangées de pièces dans plus d&#8217;une direction soient coincés entre la nouvelle pièce jouée et d&#8217;autres pièces de la même couleur. Dans ce cas, toutes les pièces dans toutes les directions viables sont retournées.</p>
+<p>En suivant les <strong>règles du jeu Reversi </strong>Le jeu est terminé quand aucun joueur n&#8217;a un coup légal (c&#8217;est-à-dire un coup qui capture au moins une pièce adverse) ou quand le plateau est plein.</p>
+<h2>Quelles différences entre Othello et Reversi</h2>
+<p>Dans les <strong>règles de Othello</strong>, les quatre cases au milieu du tableau commencent avec quatre pièces déjà placés &#8211; blanc en haut à gauche et en bas à droite; noir en haut à droite et en bas à gauche. La raison en est que dans Reversi, la liberté supplémentaire peut entraîner une ouverture qui produit un jeu moins intéressant.<br />
+Dans les <strong>règles de Reversi</strong>, si un joueur ne peut pas jouer une pièce, le jeu se termine. Dans Othello, un joueur sans mouvement passe simplement, et l&#8217;autre joueur fait autant de mouvements que nécessaire avant que le premier joueur puisse se déplacer à nouveau.</p>
+
+    
+    
+</div>
+    
+    
+	
+	
+		<nav class="gridlove-prev-next-nav">
+				<div class="gridlove-prev-link">
+				
+					
+						<a href="./../regles-jeu-du-moulin/index.html">
+							<span class="gridlove-pn-ico"><i class="fa fa fa-chevron-left"></i></span>
+							<span class="gridlove-pn-link">Les règles de jeu du moulin</span>
+						</a>
+
+					
+
+								</div>
+				<div class="gridlove-next-link">
+				
+					
+						<a href="./../regles-jeu-royal-ur/index.html">
+							<span class="gridlove-pn-ico"><i class="fa fa fa-chevron-right"></i></span>
+							<span class="gridlove-pn-link">Les règles du jeu royal d&#8217;Ur</span>
+						</a>
+					
+
+								</div>
+
+		</nav>
+
+	
+
+</div>
+
+</article>
+                            
+
+            	<div class="gridlove-ad"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Responsive -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3711695498099821"
+     data-ad-slot="1645253548"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+
+            
+
+            
+        </div>
+
+        
+
+	<div class="gridlove-sidebar">
+
+						<div id="gridlove_adsense_widget-2" class="widget gridlove-box gridlove_adsense_widget gridlove-widget-expand">		<div class="gridlove-adsense-wrapper">
+			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Responsive -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3711695498099821"
+     data-ad-slot="1645253548"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>		</div>
+	
+		</div><div id="gridlove_posts_widget-2" class="widget gridlove-box gridlove_posts_widget"><h4 class="widget-title">À lire aussi</h4>
+				
+		<div class="gridlove-posts-widget">
+
+							
+								
+				<article class="post-15996 post type-post status-publish format-standard has-post-thumbnail hentry category-jeux">
+
+		            		                <div class="entry-image">
+		                <a href="./../regles-jeu-surakarta/index.html" title="Les règles du jeu Surakarta">
+		                   	<img width="80" height="60" src="./../wp-content/uploads/2018/01/surakarta-80x60.jpg" class="attachment-gridlove-thumbnail size-gridlove-thumbnail wp-post-image" alt="" />		                </a>
+		                </div>
+		            
+		            <div class="entry-header">
+		                <h6><a href="./../regles-jeu-surakarta/index.html">Les règles du jeu Surakarta</a></h6>		                		            </div>
+
+				</article>
+
+				
+				
+							
+								
+				<article class="post-15975 post type-post status-publish format-standard has-post-thumbnail hentry category-jeux">
+
+		            		                <div class="entry-image">
+		                <a href="./index.html" title="Les règles de jeu Reversi (Othello)">
+		                   	<img width="80" height="60" src="./../wp-content/uploads/2018/01/reversi-othello-80x60.png" class="attachment-gridlove-thumbnail size-gridlove-thumbnail wp-post-image" alt="" />		                </a>
+		                </div>
+		            
+		            <div class="entry-header">
+		                <h6><a href="./index.html">Les règles de jeu Reversi (Othello)</a></h6>		                		            </div>
+
+				</article>
+
+				
+				
+							
+								
+				<article class="post-15968 post type-post status-publish format-standard has-post-thumbnail hentry category-jeux">
+
+		            		                <div class="entry-image">
+		                <a href="./../regles-jeu-halma/index.html" title="Les règles du jeu Halma">
+		                   	<img width="80" height="60" src="./../wp-content/uploads/2018/01/Halma-80x60.jpg" class="attachment-gridlove-thumbnail size-gridlove-thumbnail wp-post-image" alt="" />		                </a>
+		                </div>
+		            
+		            <div class="entry-header">
+		                <h6><a href="./../regles-jeu-halma/index.html">Les règles du jeu Halma</a></h6>		                		            </div>
+
+				</article>
+
+				
+				
+							
+								
+				<article class="post-15979 post type-post status-publish format-standard has-post-thumbnail hentry category-jeux">
+
+		            		                <div class="entry-image">
+		                <a href="./../regles-jeu-senet/index.html" title="Les règles du jeu Senet">
+		                   	<img width="80" height="60" src="./../wp-content/uploads/2018/01/jeu-Senet-80x60.jpg" class="attachment-gridlove-thumbnail size-gridlove-thumbnail wp-post-image" alt="" srcset="./../wp-content/uploads/2018/01/jeu-Senet-80x60.jpg 80w, ./../wp-content/uploads/2018/01/jeu-Senet-300x225.jpg 300w, ./../wp-content/uploads/2018/01/jeu-Senet.jpg 400w" sizes="(max-width: 80px) 100vw, 80px" />		                </a>
+		                </div>
+		            
+		            <div class="entry-header">
+		                <h6><a href="./../regles-jeu-senet/index.html">Les règles du jeu Senet</a></h6>		                		            </div>
+
+				</article>
+
+				
+				
+							
+								
+				<article class="post-15989 post type-post status-publish format-standard has-post-thumbnail hentry category-jeux">
+
+		            		                <div class="entry-image">
+		                <a href="./../regles-jeu-bagh-chal/index.html" title="Les règles du jeu Bagh-Chal">
+		                   	<img width="80" height="60" src="./../wp-content/uploads/2018/01/Bagh-Chal-80x60.png" class="attachment-gridlove-thumbnail size-gridlove-thumbnail wp-post-image" alt="" />		                </a>
+		                </div>
+		            
+		            <div class="entry-header">
+		                <h6><a href="./../regles-jeu-bagh-chal/index.html">Les règles du jeu Bagh-Chal</a></h6>		                		            </div>
+
+				</article>
+
+				
+				
+							
+								
+				<article class="post-15964 post type-post status-publish format-standard has-post-thumbnail hentry category-jeux">
+
+		            		                <div class="entry-image">
+		                <a href="./../regles-jeu-l-oie/index.html" title="Les règles du jeu de l&#8217;Oie">
+		                   	<img width="80" height="60" src="./../wp-content/uploads/2018/01/jeu-de-l-oie-80x60.jpg" class="attachment-gridlove-thumbnail size-gridlove-thumbnail wp-post-image" alt="" />		                </a>
+		                </div>
+		            
+		            <div class="entry-header">
+		                <h6><a href="./../regles-jeu-l-oie/index.html">Les règles du jeu de l&#8217;Oie</a></h6>		                		            </div>
+
+				</article>
+
+				
+				
+							
+								
+				<article class="post-15991 post type-post status-publish format-standard has-post-thumbnail hentry category-jeux">
+
+		            		                <div class="entry-image">
+		                <a href="./../regles-jeu-tabula/index.html" title="Les règles du jeu Tabula">
+		                   	<img width="80" height="60" src="./../wp-content/uploads/2018/01/tabula-80x60.jpg" class="attachment-gridlove-thumbnail size-gridlove-thumbnail wp-post-image" alt="" />		                </a>
+		                </div>
+		            
+		            <div class="entry-header">
+		                <h6><a href="./../regles-jeu-tabula/index.html">Les règles du jeu Tabula</a></h6>		                		            </div>
+
+				</article>
+
+				
+				
+							
+								
+				<article class="post-15962 post type-post status-publish format-standard has-post-thumbnail hentry category-jeux">
+
+		            		                <div class="entry-image">
+		                <a href="./../regles-jeu-renard-poules-oies/index.html" title="Les règles du jeu Le Renard et Les Poules">
+		                   	<img width="80" height="60" src="./../wp-content/uploads/2018/01/renard-et-poules-80x60.jpg" class="attachment-gridlove-thumbnail size-gridlove-thumbnail wp-post-image" alt="" srcset="./../wp-content/uploads/2018/01/renard-et-poules-80x60.jpg 80w, ./../wp-content/uploads/2018/01/renard-et-poules-300x225.jpg 300w, ./../wp-content/uploads/2018/01/renard-et-poules-768x576.jpg 768w, ./../wp-content/uploads/2018/01/renard-et-poules-740x555.jpg 740w, ./../wp-content/uploads/2018/01/renard-et-poules.jpg 800w" sizes="(max-width: 80px) 100vw, 80px" />		                </a>
+		                </div>
+		            
+		            <div class="entry-header">
+		                <h6><a href="./../regles-jeu-renard-poules-oies/index.html">Les règles du jeu Le Renard et Les Poules</a></h6>		                		            </div>
+
+				</article>
+
+				
+				
+							
+								
+				<article class="post-15960 post type-post status-publish format-standard has-post-thumbnail hentry category-jeux">
+
+		            		                <div class="entry-image">
+		                <a href="./../regles-jeu-fighting-serpents/index.html" title="Les règles du jeu Fighting Serpents">
+		                   	<img width="80" height="60" src="./../wp-content/uploads/2018/01/awithlaknannai-80x60.jpg" class="attachment-gridlove-thumbnail size-gridlove-thumbnail wp-post-image" alt="" srcset="./../wp-content/uploads/2018/01/awithlaknannai-80x60.jpg 80w, ./../wp-content/uploads/2018/01/awithlaknannai-300x225.jpg 300w, ./../wp-content/uploads/2018/01/awithlaknannai.jpg 640w" sizes="(max-width: 80px) 100vw, 80px" />		                </a>
+		                </div>
+		            
+		            <div class="entry-header">
+		                <h6><a href="./../regles-jeu-fighting-serpents/index.html">Les règles du jeu Fighting Serpents</a></h6>		                		            </div>
+
+				</article>
+
+				
+				
+							
+								
+				<article class="post-15977 post type-post status-publish format-standard has-post-thumbnail hentry category-jeux">
+
+		            		                <div class="entry-image">
+		                <a href="./../regles-jeu-royal-ur/index.html" title="Les règles du jeu royal d&#8217;Ur">
+		                   	<img width="80" height="60" src="./../wp-content/uploads/2018/01/jeu-royal-d-ur-80x60.jpg" class="attachment-gridlove-thumbnail size-gridlove-thumbnail wp-post-image" alt="" />		                </a>
+		                </div>
+		            
+		            <div class="entry-header">
+		                <h6><a href="./../regles-jeu-royal-ur/index.html">Les règles du jeu royal d&#8217;Ur</a></h6>		                		            </div>
+
+				</article>
+
+				
+				
+							
+								
+				<article class="post-15944 post type-post status-publish format-standard has-post-thumbnail hentry category-jeux">
+
+		            		                <div class="entry-image">
+		                <a href="./../regles-awale-mancala/index.html" title="Les Règles de Awalé, Mancala, Bao&#8230;">
+		                   	<img width="80" height="60" src="./../wp-content/uploads/2018/01/Awale-80x60.jpg" class="attachment-gridlove-thumbnail size-gridlove-thumbnail wp-post-image" alt="" />		                </a>
+		                </div>
+		            
+		            <div class="entry-header">
+		                <h6><a href="./../regles-awale-mancala/index.html">Les Règles de Awalé, Mancala, Bao&#8230;</a></h6>		                		            </div>
+
+				</article>
+
+				
+				
+							
+								
+				<article class="post-15985 post type-post status-publish format-standard has-post-thumbnail hentry category-jeux">
+
+		            		                <div class="entry-image">
+		                <a href="./../regles-jeu-dames-chinoises/index.html" title="Les règles du jeu Dames Chinoises">
+		                   	<img width="80" height="60" src="./../wp-content/uploads/2018/01/Dames-Chinoises-80x60.jpg" class="attachment-gridlove-thumbnail size-gridlove-thumbnail wp-post-image" alt="" />		                </a>
+		                </div>
+		            
+		            <div class="entry-header">
+		                <h6><a href="./../regles-jeu-dames-chinoises/index.html">Les règles du jeu Dames Chinoises</a></h6>		                		            </div>
+
+				</article>
+
+				
+				
+							
+								
+				<article class="post-15934 post type-post status-publish format-standard has-post-thumbnail hentry category-jeux">
+
+		            		                <div class="entry-image">
+		                <a href="./../regles-jeu-de-dames/index.html" title="Règles de Jeu de dames">
+		                   	<img width="80" height="60" src="./../wp-content/uploads/2018/01/draughts-80x60.jpg" class="attachment-gridlove-thumbnail size-gridlove-thumbnail wp-post-image" alt="" />		                </a>
+		                </div>
+		            
+		            <div class="entry-header">
+		                <h6><a href="./../regles-jeu-de-dames/index.html">Règles de Jeu de dames</a></h6>		                		            </div>
+
+				</article>
+
+				
+				
+							
+								
+				<article class="post-15915 post type-post status-publish format-standard has-post-thumbnail hentry category-jeux">
+
+		            		                <div class="entry-image">
+		                <a href="./../regles-jeu-camel-up/index.html" title="Règles du jeu Camel Up">
+		                   	<img width="80" height="60" src="./../wp-content/uploads/2018/01/camel-up-main-80x60.jpg" class="attachment-gridlove-thumbnail size-gridlove-thumbnail wp-post-image" alt="" />		                </a>
+		                </div>
+		            
+		            <div class="entry-header">
+		                <h6><a href="./../regles-jeu-camel-up/index.html">Règles du jeu Camel Up</a></h6>		                		            </div>
+
+				</article>
+
+				
+				
+							
+								
+				<article class="post-15970 post type-post status-publish format-standard has-post-thumbnail hentry category-jeux">
+
+		            		                <div class="entry-image">
+		                <a href="./../regles-jeu-mehen-serpent/index.html" title="Règles du jeu Mehen &#8211; (Jeu de serpent)">
+		                   	<img width="80" height="60" src="./../wp-content/uploads/2018/01/jeu-mehen-80x60.jpg" class="attachment-gridlove-thumbnail size-gridlove-thumbnail wp-post-image" alt="" srcset="./../wp-content/uploads/2018/01/jeu-mehen-80x60.jpg 80w, ./../wp-content/uploads/2018/01/jeu-mehen-300x225.jpg 300w, ./../wp-content/uploads/2018/01/jeu-mehen.jpg 500w" sizes="(max-width: 80px) 100vw, 80px" />		                </a>
+		                </div>
+		            
+		            <div class="entry-header">
+		                <h6><a href="./../regles-jeu-mehen-serpent/index.html">Règles du jeu Mehen &#8211; (Jeu de serpent)</a></h6>		                		            </div>
+
+				</article>
+
+				
+				
+							
+								
+				<article class="post-15939 post type-post status-publish format-standard has-post-thumbnail hentry category-jeux">
+
+		            		                <div class="entry-image">
+		                <a href="./../regles-jeu-alquerque/index.html" title="Règles du jeu Alquerque">
+		                   	<img width="80" height="60" src="./../wp-content/uploads/2018/01/Alquerque-80x60.jpg" class="attachment-gridlove-thumbnail size-gridlove-thumbnail wp-post-image" alt="" srcset="./../wp-content/uploads/2018/01/Alquerque-80x60.jpg 80w, ./../wp-content/uploads/2018/01/Alquerque-300x225.jpg 300w, ./../wp-content/uploads/2018/01/Alquerque-768x576.jpg 768w, ./../wp-content/uploads/2018/01/Alquerque-740x555.jpg 740w, ./../wp-content/uploads/2018/01/Alquerque.jpg 1000w" sizes="(max-width: 80px) 100vw, 80px" />		                </a>
+		                </div>
+		            
+		            <div class="entry-header">
+		                <h6><a href="./../regles-jeu-alquerque/index.html">Règles du jeu Alquerque</a></h6>		                		            </div>
+
+				</article>
+
+				
+				
+							
+								
+				<article class="post-15973 post type-post status-publish format-standard has-post-thumbnail hentry category-jeux">
+
+		            		                <div class="entry-image">
+		                <a href="./../regles-jeu-du-moulin/index.html" title="Les règles de jeu du moulin">
+		                   	<img width="80" height="60" src="./../wp-content/uploads/2018/01/jeu-du-moulin-80x60.jpg" class="attachment-gridlove-thumbnail size-gridlove-thumbnail wp-post-image" alt="" />		                </a>
+		                </div>
+		            
+		            <div class="entry-header">
+		                <h6><a href="./../regles-jeu-du-moulin/index.html">Les règles de jeu du moulin</a></h6>		                		            </div>
+
+				</article>
+
+				
+				
+							
+								
+				<article class="post-15950 post type-post status-publish format-standard has-post-thumbnail hentry category-jeux">
+
+		            		                <div class="entry-image">
+		                <a href="./../regles-jeu-pachisi/index.html" title="Règles du jeu de Pachisi">
+		                   	<img width="80" height="60" src="./../wp-content/uploads/2018/01/unnamed-80x60.jpg" class="attachment-gridlove-thumbnail size-gridlove-thumbnail wp-post-image" alt="" />		                </a>
+		                </div>
+		            
+		            <div class="entry-header">
+		                <h6><a href="./../regles-jeu-pachisi/index.html">Règles du jeu de Pachisi</a></h6>		                		            </div>
+
+				</article>
+
+				
+				
+							
+								
+				<article class="post-15921 post type-post status-publish format-standard has-post-thumbnail hentry category-jeux">
+
+		            		                <div class="entry-image">
+		                <a href="./../regles-jeu-de-yams/index.html" title="Règles du jeu de Yams">
+		                   	<img width="80" height="60" src="./../wp-content/uploads/2018/01/yams-1-80x60.jpg" class="attachment-gridlove-thumbnail size-gridlove-thumbnail wp-post-image" alt="" />		                </a>
+		                </div>
+		            
+		            <div class="entry-header">
+		                <h6><a href="./../regles-jeu-de-yams/index.html">Règles du jeu de Yams</a></h6>		                		            </div>
+
+				</article>
+
+				
+				
+							
+								
+				<article class="post-15993 post type-post status-publish format-standard has-post-thumbnail hentry category-jeux">
+
+		            		                <div class="entry-image">
+		                <a href="./../regles-jeu-tablut/index.html" title="Les règles du jeu Tablut">
+		                   	<img width="80" height="60" src="./../wp-content/uploads/2018/01/Tablut-80x60.jpg" class="attachment-gridlove-thumbnail size-gridlove-thumbnail wp-post-image" alt="" />		                </a>
+		                </div>
+		            
+		            <div class="entry-header">
+		                <h6><a href="./../regles-jeu-tablut/index.html">Les règles du jeu Tablut</a></h6>		                		            </div>
+
+				</article>
+
+				
+				
+			
+		</div>
+
+		
+		
+		</div>		
+						<div class="gridlove-sticky-sidebar">
+					<div id="gridlove_adsense_widget-4" class="widget gridlove-box gridlove_adsense_widget gridlove-widget-expand">		<div class="gridlove-adsense-wrapper">
+			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Responsive -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3711695498099821"
+     data-ad-slot="1645253548"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>		</div>
+	
+		</div>				</div>
+		
+	</div>
+
+
+    </div>
+        
+</div>
+
+
+
+
+<div id="footer" class="gridlove-footer">
+
+	
+	        <div class="container">
+	            <div class="row">
+	                
+											<div class="col-lg-3 col-md-6 col-sm-12">
+													</div>
+											<div class="col-lg-3 col-md-6 col-sm-12">
+													</div>
+											<div class="col-lg-3 col-md-6 col-sm-12">
+													</div>
+											<div class="col-lg-3 col-md-6 col-sm-12">
+													</div>
+					
+	            </div>
+	        </div>
+
+	
+    
+	        <div class="gridlove-copyright">
+	            <div class="container">
+	                	            </div>
+	        </div>
+
+	
+</div>
+
+<div class="gridlove-sidebar-action-wrapper">
+
+	<span class="gridlove-action-close"><i class="fa fa-times" aria-hidden="true"></i></span>
+
+	<div class="gridlove-sidebar-action-inside">
+
+		<div class="hidden-lg-up widget gridlove-box widget_nav_menu">
+							</div>
+
+									<div id="gridlove_category_widget-3" class="widget gridlove-box gridlove_category_widget"><h4 class="widget-title">Toutes les catégories:</h4>
+		<ul class="gridlove-count-color">
+		    		    		     
+		</ul>
+
+		</div>					
+
+	</div>
+
+</div>
+
+<div class="gridlove-sidebar-action-overlay"></div>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var gridlove_js_settings = {"rtl_mode":"","header_sticky":"1","header_sticky_offset":"100","header_sticky_up":"","logo":".\/wp-content\/themes\/gridlove\/assets\/img\/gridlove_logo.png","logo_retina":".\/wp-content\/themes\/gridlove\/assets\/img\/gridlove_logo@2x.png","logo_mini":".\/wp-content\/themes\/gridlove\/assets\/img\/gridlove_logo_mini.png","logo_mini_retina":".\/wp-content\/themes\/gridlove\/assets\/img\/gridlove_logo_mini@2x.png"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='./../wp-content/themes/gridlove/assets/js/min.js?ver=1.1'></script>
+<script type='text/javascript' src='./../wp-includes/js/wp-embed.min.js?ver=4.9.2'></script>
+</body>
+
+</html>

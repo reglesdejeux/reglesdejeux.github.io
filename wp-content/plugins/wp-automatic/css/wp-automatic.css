@@ -1,0 +1,30 @@
+
+.wp_automatic_gallery_main{
+	width:500px;
+	height:500px;
+	background-size:contain;
+	background-position:center;
+	background-repeat:no-repeat;
+	border:1px solid #eee;
+	margin-bottom:10px;	
+}
+
+.wp_automatic_gallery_btn{
+	background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 1px solid #eee;
+    height: 80px;
+    width: 80px;
+    float:left;
+    cursor:pointer;
+    margin-right:1px;
+}
+
+.wp_automatic_gallery_btn:last-child{
+	clear:right;
+}
+
+.wp_automatic_fb_img{
+	margin-bottom:10px;
+}
