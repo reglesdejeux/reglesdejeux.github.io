@@ -73,7 +73,6 @@ p:last-child { padding-bottom: 0; }
 
 h1, h2, h3, h4, h5, h6, .wtitle, .title { 
 	margin: 0;
-	padding: 0 0 0.5em;
 	line-height: 1.1;
 	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 	font-weight: bold;
@@ -324,7 +323,6 @@ button:hover,
  
 /* ANONS 
  * ----------------------------------------- */
-.anons { margin-bottom: 10px;}
 .anons h2 { font-size: 20px; padding-bottom: 0; }
 .anons-thumbnail { display: none; }
 .anons-thumbnail.show { display: block; }
